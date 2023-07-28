@@ -4,12 +4,12 @@
       <q-page class="flex flex-center" style="font-family: Lato;">
 <!--        <div id="particles-js"></div>-->
         <q-card :style="$q.platform.is.desktop ? 'width:55%;' : ''" class="row my-card items-center q-pa-none q-ma-none shadow-24">
-          <q-card-section v-if="$q.platform.is.desktop" class="col-md-4 col-lg-4 col-sm-12 sol-xs-12 items-center float-left" style="background-color: #1f509e"
+          <q-card-section v-if="$q.platform.is.desktop" class="col-md-4 col-lg-4 col-sm-12 sol-xs-12 items-center float-left" style="background-color: #d5ccc0"
                           :style="{'height':(win_height-270)+'px'}" horizontal>
             <div class="text-center full-width">
-              <div><img src="images/logo.png" style="width: 33%"/></div>
-              <div class="text-weight-bolder text-white text-h6">Quasar Shopping</div>
-              <div class="text-caption text-white">Quasar Shopping - One stop solution</div>
+              <div><img src="images/cover.png" style="width: 90%"/></div>
+              <!-- <div class="text-weight-bolder text-white text-h6">Quasar Shopping</div> -->
+              <div class="text-caption text-white q-px-xs">Produtos frescos, cuidadosamente selecionados.</div>
             </div>
           </q-card-section>
           <q-card-section class="col-md-8 col-lg-8 col-sm-12 sol-xs-12 float-left">
@@ -17,12 +17,12 @@
               <div>
                 <div v-if="!$q.platform.is.desktop" class="text-weight-bolder text-center q-mb-md text-primary text-h6">Quasar Shopping</div>
                 <q-form :style="$q.platform.is.desktop ? 'width:55%;margin: auto;' : 'margin: auto;'" class="q-gutter-md">
-                  <span class="text-subtitle1 text-weight-bold text-grey-7">Welcome Aboard</span>
+                  <span class="text-subtitle1 text-weight-bold text-grey-7">Bem-Vindo/a!</span>
                   <q-input
                     dense
                     outlined
                     v-model="username"
-                    label="Username"
+                    label="E-mail"
                     lazy-rules
                   />
 
@@ -31,14 +31,14 @@
                     type="password"
                     outlined
                     v-model="password"
-                    label="Password"
+                    label="Senha"
                     lazy-rules
                   />
-                  <q-checkbox class="text-grey-8" dense v-model="remember_me" label="Remember me"/>
+                  <q-checkbox class="text-grey-8" dense v-model="remember_me" label="Lembrar"/>
                   <div>
-                    <q-btn class="text-capitalize" size="sm" style="width:75px" dense label="Login" to="/home" type="button"
-                           color="primary"/>
-                    <q-btn class="float-right text-blue-9 text-capitalize" size="sm" style="width:75px;border: 1px solid #36669e;" dense label="Sign Up"
+                    <q-btn class="text-capitalize text-white" size="sm" style="width:75px; background-color:#9e7d65; " dense label="Iniciar Sessão" to="/home" type="button"
+                           />
+                    <q-btn class="float-right text-capitalize text-brown" size="sm" style="width:75px;border: 1px solid #9e7d65;" dense label="Criar conta"
                            type="button"/>
                   </div>
                 </q-form>
